@@ -14,9 +14,16 @@ pip install pydot-ng opencv-python
 conda install tensorflow-gpu
 ## If use GPU, download and install CUDA and CUDNN,
 ## Anaconda 好像封装了 GPU 的依赖
+## 没有 GPU for MacOS 
 conda install keras
 ```
 
 ### R 库
 
 
+```r
+install.packages("keras")
+
+library(keras)
+install_keras()
+```
