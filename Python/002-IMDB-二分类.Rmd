@@ -1,0 +1,34 @@
+---
+title: "IMDB 二分类预测"
+author: "王诗翔"
+date: "2020/04/15"
+output: html_document
+---
+
+## 设置
+
+```{r setup}
+library(reticulate)
+use_condaenv()
+use_python("D:/Tool/miniconda/envs/learn/python.exe", required = TRUE)
+knitr::knit_engines$set(python = reticulate::eng_python)
+py_config()
+```
+
+## 数据集
+
+```{python}
+import keras
+import matplotlib.pyplot as plt
+```
+
+```{python}
+from keras.datasets import imdb
+
+# train_data, train_labels, test_data, test_labels = imdb.load_data(num_words=10000)
+```
+
+```{python}
+help(imdb.load_data)
+```
+
