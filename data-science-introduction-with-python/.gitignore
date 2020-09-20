@@ -1,0 +1,26 @@
+# R
+.Rhistory
+.Rproj.user
+.RData
+
+# vscode
+.vscode
+
+# Python
+.ipynb_checkpoints
+
+# system
+.DS_Store
+*.log
+*.dump
+
+# slides source
+*_files
+/*/slides/*
+!/*/slides/*.Rmd
+!/*/slides/images/
+
+# others
+*.tex
+*.aux
+*.xdv
