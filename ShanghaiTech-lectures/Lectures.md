@@ -205,3 +205,90 @@ also called belief networks
 
 
 
+#### Boosting and Stacking
+
+- Boosting
+- Gradient boosting
+- Stacking: 使用模型（blender）处理模型集成的投票（blending），而不是硬投票（选择预测结果最好的子模型的结果）
+
+
+
+### 降维
+
+主要有两类方法：
+
+- 映射 projection，如主成分分析 PCA
+- 流形学习 manifold learning（非线性降维）
+  - t-SNE 属于非线性降维
+
+#### PCA
+
+找到一个离数据最近的超平面，然后将数据映射过去。
+
+- SVG 求解
+
+
+
+选择 PC 数量
+
+- elbow plot
+
+
+
+修改版本：
+
+- Randomized PCA
+- Incremental PCA
+- Kernel PCA
+
+
+
+### 非监督学习
+
+- K-means
+- DBSCAN
+- Gaussian mixture model (GMM)
+
+
+
+应用例子：
+
+- 聚类
+
+- 异常点检测
+- 密度估计
+
+
+
+聚类：
+
+- 基于中心点聚类
+  - kmeans
+- 基于密度大聚类
+  - DBSCAN
+- 基于分布的聚类
+- 层次聚类
+
+
+
+#### k-means
+
+迭代算法。
+
+最优数目。
+
+- elbow rule
+- silhouette coef
+
+
+
+#### DBSCAN
+
+将类看作密度很高的连续区域。
+
+
+
+#### 高斯混合模型
+
+拆分为高斯分布的组合。
+
