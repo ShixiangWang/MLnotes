@@ -292,3 +292,137 @@ also called belief networks
 
 拆分为高斯分布的组合。
 
+
+
+## 深度学习
+
+
+
+### 神经网络
+
+- 生物到人工神经元
+- 训练神经网络
+- 调参
+- 梯度消失/爆炸
+- 重复使用预训练层
+- 优化器
+- 降低过拟合（正则化）
+
+
+
+#### 人工神经网络
+
+- Linear threshold unit (LTU)：连续值到离散值的映射
+
+- Perceptron
+
+  - Input layer
+  - Output layer
+  - Hebb's rule
+
+- Multi-Layer Perceptron (MLP)
+
+  - Input layer
+  - Hidden layer
+  - Output layer
+
+- Deep neural network (DNN)
+
+  - two or more hidden layers
+  - Useful when backpropagation algorithm in 1986
+
+- 反向传播算法
+
+  - Forward pass
+  - Reverse pass
+  - Gradient descent
+
+  ![image-20200924184706915](https://gitee.com/ShixiangWang/ImageCollection/raw/master/png/20200924184707.png)
+
+- 激活函数：导数特性不一样
+
+  - Logistic function
+  - Hyperbolic tangent function
+  - ReLU function
+
+![image-20200924184734536](https://gitee.com/ShixiangWang/ImageCollection/raw/master/png/20200924184734.png)
+
+#### 训练神经网络
+
+- 很多步骤
+
+![image-20200924184757456](https://gitee.com/ShixiangWang/ImageCollection/raw/master/png/20200924184757.png)
+
+![image-20200924184815728](https://gitee.com/ShixiangWang/ImageCollection/raw/master/png/20200924184815.png)
+
+#### 调参
+
+![image-20200924184920032](https://gitee.com/ShixiangWang/ImageCollection/raw/master/png/20200924184920.png)
+
+
+
+- 隐藏层数
+  - 更深的网络需要更多的数据
+  - 更深更容易过拟合
+  - 更深更强大
+- 每一层神经元数量
+  - 逐渐增加直至过拟合
+  - 使用宽松的模型（数量多），然后利用正则化技术防止过拟合
+- 激活函数
+  - 隐藏层目前一般使用 ReLU
+  - 输出层
+    - 分类使用 softmax
+- 问题
+  - 梯度消失
+  - 梯度爆炸
+  - 上述原因主要在于权重初始化和激活函数
+- Batch Normalization (BN)
+  - 做法：及时调整值，避免过大过小
+  - 可以使用一些饱和激活函数
+  - 对权重初始化不敏感了
+  - 可以使用更大的学习率
+  - 类似正则化
+
+
+
+#### 迁移学习
+
+- 重新利用已构建好的模型
+
+
+
+#### 无监督学习做预训练
+
+
+
+#### 利用辅助任务进行预训练
+
+- 自监督学习
+
+
+
+#### 更快地优化
+
+比梯度下降更快的优化器
+
+- Momentum optimization
+- Nesterov Accelerated Gradient (NAG)
+- AdaGrad
+- RMSProp
+- Adam
+- Nadam optimization
+
+
+
+学习率策略：
+
+- 先高学习率然后降低学习率
+
+
+
+#### 过拟合处理
+
+正则化
+
+- dropout（一般是 50%）
+- 
