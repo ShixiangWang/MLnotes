@@ -4,7 +4,7 @@ Machine learning and deep learning notes in R or Python
 
 ## 安装
 
-### Python 库
+### Python 安装 keras
 
 ```sh
 conda create -n learn
@@ -20,7 +20,7 @@ pip install pydot-ng opencv-python
 conda install keras
 ```
 
-### R 库
+### R 安装 keras
 
 
 ```r
@@ -28,4 +28,14 @@ install.packages("keras")
 
 library(keras)
 install_keras()
+```
+
+### Python 安装 pytorch
+
+```sh
+conda install -c pytorch pytorch
+conda install -c pytorch torchvision
+# gpu install
+# <https://github.com/williamFalcon/pytorch-gpu-install>
+#conda install -c pytorch cuda100
 ```
