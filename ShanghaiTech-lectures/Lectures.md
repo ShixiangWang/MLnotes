@@ -425,4 +425,80 @@ also called belief networks
 正则化
 
 - dropout（一般是 50%）
-- 
+- L1 和 L2 正则化
+- ...
+
+
+
+### CNN
+
+#### Why CNN
+
+- 数据大（图像像素多）会导致模型复杂、难以计算
+- receptive field/weight sharing/pooling-subsampling
+- 先多层卷积和衔接降采样，随后接上多层神经网络
+
+
+
+#### 卷积层激活函数
+
+常用：
+
+- ReLU
+- Leaky ReLU
+
+
+
+#### 池化层 pooling
+
+- Max pooling
+
+
+
+#### LeNet-5
+
+![image-20200929182559376](https://gitee.com/ShixiangWang/ImageCollection/raw/master/png/20200929182559.png)
+
+
+
+#### CNN pipeline
+
+1. Preprocess the data
+
+```
+x = x - mean(x)
+x = x / sd(x)
+```
+
+2. Choose the architecture
+3. 用小量样本测试
+4. 超参优化 - best to optimize in log space
+
+
+
+#### 网络结构
+
+- VGGNet
+- GoogLeNet
+- ResNet
+- SENet
+
+
+
+#### 目标检测 CNN
+
+- Fast R-CNN
+  - input image > ConvNet > conv feature map of image > Rol Pooling > FCs > Linear + softmax/Linear
+- Faster R-CNN
+  - Region Proposal Network
+
+
+
+#### Sequence modeling
+
+- 将 ACGT 每一个字母转为 4 维向量
+
+
+
+将 CNN 看作一个特征提取器
+
