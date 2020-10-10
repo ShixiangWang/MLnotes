@@ -502,3 +502,29 @@ x = x / sd(x)
 
 将 CNN 看作一个特征提取器
 
+
+
+### RNN
+
+-  Suitable for sequence data
+
+
+
+#### RNN
+
+![image-20201010182606699](https://gitee.com/ShixiangWang/ImageCollection/raw/master/png/20201010182606.png)
+
+![image-20201010182534987](https://gitee.com/ShixiangWang/ImageCollection/raw/master/png/20201010182535.png)
+
+![image-20201010182633762](https://gitee.com/ShixiangWang/ImageCollection/raw/master/png/20201010182633.png)
+
+
+
+#### Long-term Short Term Memory
+
+- LSTM
+  - Replacing a vanilla RNN neuron by the LSTM unit
+  - Wants the short-term memory to last for a long time period
+
+![image-20201010190243175](https://gitee.com/ShixiangWang/ImageCollection/raw/master/png/20201010190243.png)
+
