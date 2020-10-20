@@ -528,3 +528,22 @@ x = x / sd(x)
 
 ![image-20201010190243175](https://gitee.com/ShixiangWang/ImageCollection/raw/master/png/20201010190243.png)
 
+
+
+### 自编码器
+
+PCA就是一个线性自编码器。
+
+自编码器的核心原理是提取输入的有效特征，并能进行比较好重构（还原）原来的输入。
+
+
+
+### 生成模型 GAN
+
+
+
+### 增强学习
+
+
+
+### 图神经网络（GNN）
